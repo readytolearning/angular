@@ -2,6 +2,8 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MoviesComponent } from './movies/movies.component';
 import { DisplayMovieComponent } from './displaymovie/displaymovie.component';
+import { DisplayMovieService } from './displaymovie/displaymovie.service';
+
 import { ProgramsComponent } from './programs/programs.component';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -18,6 +20,8 @@ const appRoutes: Routes = [
 @NgModule({
  imports: [ BrowserModule,
    RouterModule.forRoot(appRoutes)],
+     providers: [DisplayMovieService],
+
   declarations: [ AppComponent , MoviesComponent , ProgramsComponent, DisplayMovieComponent],
   bootstrap:    [ AppComponent  ]
 })

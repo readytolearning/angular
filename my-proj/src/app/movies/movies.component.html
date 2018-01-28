@@ -1,0 +1,15 @@
+
+
+ <div class="row" >
+    <div *ngFor="let movie of movieDetails" class = "col-md-4">
+
+    	<a href="/displaymovie" >
+
+      {{movie.name}}<br><img src="{{ movie.url }}" width="50%"  /> 
+  </a>
+      <br> <br>
+ <br>
+
+
+    </div>
+  </div>

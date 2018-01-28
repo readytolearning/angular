@@ -1,0 +1,25 @@
+
+    <div class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a href="../" class="navbar-brand">Book My Program</a>
+  
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav">
+           
+            <li class="nav-item">
+              <a class="nav-link" [routerLink] = "['/movies']"  >Movies</a>
+            </li>
+
+             <li class="nav-item">
+              <a class="nav-link" [routerLink] = "['/programs']"  >Programs</a>
+            </li>
+            
+           
+          </ul>
+        </div>
+      
+      </div>
+    </div>
+     <div class="container">
+      <router-outlet></router-outlet>
+    </div>
